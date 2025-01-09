@@ -9,8 +9,13 @@ const NavBar = () => {
   const [token, setToken] = useState(true);
 
   return (
-    <div className="max-w-[1440px] mx-auto flex  justify-between items-center text-sm py-4 mb-5 border-b border-b-gray-300">
-      <img className="w-44 cursor-pointer" src={assets.logo} alt="" />
+    <div className="container max-container flex flex-row  justify-between items-center text-sm py-4 mb-5 border-b border-b-gray-300">
+      <img
+        onClick={() => navigate("/")}
+        className="w-44 cursor-pointer"
+        src={assets.logo}
+        alt=""
+      />
       <ul className="hidden md:flex gap-5 font-bold">
         <NavLink to="/">
           <li className="py-1">Home</li>

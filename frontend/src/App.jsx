@@ -4,10 +4,11 @@ import Doctors from "./pages/Doctors";
 import Login from "./pages/Login";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import Appointments from "./pages/Appointment";
 import MyAppointments from "./pages/MyAppointments";
-import Appointments from "./pages/Appointments";
 import MyProfile from "./pages/MyProfile";
 import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
 
 export default function App() {
   return (
@@ -24,6 +25,7 @@ export default function App() {
         <Route path="/appointment/:docId" element={<Appointments />} />
         <Route path="/my-profile" element={<MyProfile />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
